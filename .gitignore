@@ -1,0 +1,85 @@
+# ============================================
+# VARIABLES DE ENTORNO (SENSIBLES)
+# ============================================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ============================================
+# JAVA / SPRING BOOT
+# ============================================
+# Build output
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# ============================================
+# IDE
+# ============================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# ============================================
+# OS
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# LOGS
+# ============================================
+*.log
+logs/
+
+# ============================================
+# DOCKER (opcional, si no quieres subir configs locales)
+# ============================================
+# .env.docker
+# docker-compose.override.yml
+
+# ============================================
+# TESTS & COVERAGE
+# ============================================
+coverage/
+.coverage
+htmlcov/
+jacoco/
+
+# ============================================
+# MISC
+# ============================================
+*.swp
+*.swo
+*~
+node_modules/
