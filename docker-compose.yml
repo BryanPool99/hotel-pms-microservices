@@ -94,7 +94,7 @@ services:
     networks:
       - hotel-net
 
-# ⚠️ ESTO ES LO QUE FALTABA EN TU ARCHIVO ANTERIOR
+
 volumes:
   identity_data:
   inventory_data:
