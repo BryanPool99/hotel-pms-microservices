@@ -1,6 +1,6 @@
 package com.bryandev.identity_service.infrastructure.in.security;
 
-import com.bryandev.identity_service.application.out.TokenGeneratorPort;
+import com.bryandev.identity_service.application.output.TokenGeneratorPort;
 import com.bryandev.identity_service.domain.model.User;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;

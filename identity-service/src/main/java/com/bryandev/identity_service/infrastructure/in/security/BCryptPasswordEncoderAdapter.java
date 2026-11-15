@@ -1,6 +1,6 @@
 package com.bryandev.identity_service.infrastructure.in.security;
 
-import com.bryandev.identity_service.application.out.PasswordEncoderPort;
+import com.bryandev.identity_service.application.output.PasswordEncoderPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;

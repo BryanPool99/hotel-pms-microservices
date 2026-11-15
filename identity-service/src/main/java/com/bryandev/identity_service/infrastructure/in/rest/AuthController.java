@@ -1,7 +1,7 @@
 package com.bryandev.identity_service.infrastructure.in.rest;
 
-import com.bryandev.identity_service.application.in.LoginUserUseCase;
-import com.bryandev.identity_service.application.in.RegisterUserUseCase;
+import com.bryandev.identity_service.application.input.LoginUserUseCase;
+import com.bryandev.identity_service.application.input.RegisterUserUseCase;
 import com.bryandev.identity_service.infrastructure.in.rest.dto.request.LoginRequest;
 import com.bryandev.identity_service.infrastructure.in.rest.dto.request.RegisterRequest;
 import com.bryandev.identity_service.infrastructure.in.rest.dto.response.AuthResponse;

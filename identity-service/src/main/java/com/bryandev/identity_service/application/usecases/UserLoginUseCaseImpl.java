@@ -1,9 +1,9 @@
 package com.bryandev.identity_service.application.usecases;
 
-import com.bryandev.identity_service.application.in.LoginUserUseCase;
-import com.bryandev.identity_service.application.out.PasswordEncoderPort;
-import com.bryandev.identity_service.application.out.TokenGeneratorPort;
-import com.bryandev.identity_service.application.out.UserRepositoryPort;
+import com.bryandev.identity_service.application.input.LoginUserUseCase;
+import com.bryandev.identity_service.application.output.PasswordEncoderPort;
+import com.bryandev.identity_service.application.output.TokenGeneratorPort;
+import com.bryandev.identity_service.application.output.UserRepositoryPort;
 import com.bryandev.identity_service.domain.exception.InvalidCredentialsException;
 import lombok.RequiredArgsConstructor;
 

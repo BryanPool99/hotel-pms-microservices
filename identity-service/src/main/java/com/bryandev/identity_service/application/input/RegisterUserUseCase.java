@@ -1,4 +1,4 @@
-package com.bryandev.identity_service.application.in;
+package com.bryandev.identity_service.application.input;
 
 import com.bryandev.identity_service.domain.model.User;
 

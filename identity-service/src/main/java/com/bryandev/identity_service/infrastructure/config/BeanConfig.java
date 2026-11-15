@@ -1,10 +1,10 @@
 package com.bryandev.identity_service.infrastructure.config;
 
-import com.bryandev.identity_service.application.in.LoginUserUseCase;
-import com.bryandev.identity_service.application.in.RegisterUserUseCase;
-import com.bryandev.identity_service.application.out.PasswordEncoderPort;
-import com.bryandev.identity_service.application.out.TokenGeneratorPort;
-import com.bryandev.identity_service.application.out.UserRepositoryPort;
+import com.bryandev.identity_service.application.input.LoginUserUseCase;
+import com.bryandev.identity_service.application.input.RegisterUserUseCase;
+import com.bryandev.identity_service.application.output.PasswordEncoderPort;
+import com.bryandev.identity_service.application.output.TokenGeneratorPort;
+import com.bryandev.identity_service.application.output.UserRepositoryPort;
 import com.bryandev.identity_service.application.usecases.UserLoginUseCaseImpl;
 import com.bryandev.identity_service.application.usecases.UserRegisterUseCaseImpl;
 import org.springframework.context.annotation.Bean;
