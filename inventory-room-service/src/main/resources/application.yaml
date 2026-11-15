@@ -1,3 +1,14 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: inventory-room-service
+  r2dbc:
+    url: r2dbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:inventory_db}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+    initialize-schema: true
+  sql:
+    init:
+      mode: always
