@@ -1,3 +1,40 @@
+server:
+  port: 8083
+
 spring:
   application:
     name: reservation-service
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5435/${RESERVATION_DB_NAME}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    initialize-schema: true
+  sql:
+    init:
+      mode: always
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
+
+# URLs de microservicios externos
+services:
+  inventory:
+    url: ${INVENTORY_SERVICE_URL}
+
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      inventoryServiceCB:
+        registerHealthIndicator: true
+        slidingWindowSize: 5
+        minimumNumberOfCalls: 3
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 2
+        # Ignoramos errores de negocio 404 (la habitación no existe no significa que el servicio esté caído)
+        ignoreExceptions:
+          - com.bryandev.reservation_service.domain.exception.InvalidReservationException
+  timelimiter:
+    instances:
+      inventoryServiceCB:
+        timeoutDuration: 3s
